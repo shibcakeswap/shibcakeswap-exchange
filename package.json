@@ -1,0 +1,13 @@
+{
+  "name": "exchange",
+  "description": "ShibcakeSwap Subgraph",
+  "version": "1.0.0",
+  "repository": "git@github.com:pancakeswap/shibcake-subgraph.git",
+  "author": "ShibcakeSwap",
+  "license": "MIT",
+  "scripts": {
+    "codegen": "graph codegen subgraph.yaml",
+    "build": "graph build subgraph.yaml",
+    "deploy": "graph deploy --product hosted-service --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ pancakeswap/exchange subgraph.yaml"
+  }
+}
